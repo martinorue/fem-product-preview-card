@@ -1,14 +1,20 @@
 body {
-    background-color: hsl(30, 38%, 92%);
+    background-color: rgb(242, 235, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
 .container {
     display: grid;
-    padding: 1.3rem 0.5rem;
+    max-width: 575px;
+    margin: 0px auto;
 }
 
 .img {
-    background-image: url(images/image-product-mobile.jpg);
+    background-image: url("images/image-product-mobile.jpg");
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -21,35 +27,94 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     font-size: 0.7rem;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px;
 }
 
 h1,
 span {
-    font-family: 'Fraunces', serif;
+    font-family: Fraunces, serif;
 }
 
 h1 {
-    margin: 0;
-    color: hsl(212, 21%, 14%);
+    margin: 0px;
+    color: rgb(28, 35, 43);
     line-height: 2rem;
 }
 
-
 .content {
-    padding: 5px 32px;
-    background-color: hsl(0, 0%, 100%);
+    padding: 5px 25px;
+    background-color: rgb(255, 255, 255);
 }
 
 .content p {
-    font-size: 0.8rem;
+    font-size: 14px;
     line-height: 1.3rem;
 }
 
 .content p,
-.title {
-    font-family: 'Montserrat', sans-serif;
-    color: hsl(228, 12%, 48%);
+.title,
+button {
+    font-family: Montserrat, sans-serif;
+    color: rgb(108, 114, 137);
 }
 
-.prices {}
+span:nth-child(1) {
+    color: rgb(60, 128, 103);
+    font-size: 1.7rem;
+}
+
+span:nth-child(2) {
+    color: rgb(108, 114, 137);
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+.prices {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    padding: 0.9rem;
+    margin: 12px 0px;
+    background-color: rgb(60, 128, 103);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.button-content {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: rgb(29, 62, 50);
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        overflow: hidden;
+        border-radius: 7px;
+    }
+
+    .img {
+        background-image: url("images/image-product-desktop.jpg");
+        border-radius: unset;
+        height: auto;
+        max-height: 432px;
+    }
+}
+
+.attribution{
+    margin-top: 10px;
+}
+
