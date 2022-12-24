@@ -1,0 +1,55 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    display: grid;
+    padding: 1.3rem 0.5rem;
+}
+
+.img {
+    background-image: url(images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 40vh;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.title {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 0.7rem;
+    margin: 10px 0px 10px 0px;
+}
+
+h1,
+span {
+    font-family: 'Fraunces', serif;
+}
+
+h1 {
+    margin: 0;
+    color: hsl(212, 21%, 14%);
+    line-height: 2rem;
+}
+
+
+.content {
+    padding: 5px 32px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.content p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+
+.content p,
+.title {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.prices {}
